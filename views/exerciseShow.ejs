@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h1>
+        <%=exercise.name%>
+    </h1>
+    <div>
+        <p>
+            <%=exercise.image%>
+                <%=exercise.muscle%>
+                    <%=exercise.description%>
+                        <%=exercise.difficulty%>
+        </p>
+    </div>
+    <a href="/exercises"><button>BACK</button></a>
+    <form action="/exercises/<%=exercise._id%>?_method=DELETE" method="POST" style="display:inline; margin-left: 16px">
+        <input type="submit" value="DELETE">
+    </form>
+    <a href="/exercises/<%=exercise._id%>/edit"><button>EDIT</button></a>
+</body>
+
+</html>
