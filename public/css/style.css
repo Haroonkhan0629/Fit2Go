@@ -1,0 +1,133 @@
+body {
+    background-image: url("https://wallpapercave.com/wp/wp2483004.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.nav {
+    float: left;
+}
+
+.nav:last-child {
+    border-right: none;
+}
+
+.nav .bar {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav .bar:hover {
+    background-color: black;
+}
+
+.active {
+    background-color: rgb(87, 146, 154);
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+  }
+
+header {
+    padding: 30px;
+    text-align: center;
+    background: cadetblue;
+    border-radius: 4px;
+  }
+  
+header h1 {
+    font-size: 50px;
+  }
+
+.card {
+    background-color: rgb(48, 33, 33);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input.form[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: whitesmoke;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .button {
+    background-color: #4CAF50;
+    padding: 8px 14px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .back {
+    width: 5.9%;
+  }
+
+  .edit {
+    width: 4.7%;
+  }
+
+  .create {
+    width: 7.8%;
+  }
+
+  .delete {
+    width: 13%;
+  }
+
+label[for=username] {
+    color: whitesmoke;
+}
+
+label[for=password] {
+    color: whitesmoke;
+}
+
+p {
+  color: whitesmoke;
+}

@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <%- include("./partials/head.ejs") %>
 </head>
+
 <body>
-    <h1>Exercises</h1>
-    <ul>
-        <% for(let i=0; i < exercises.length; i++){ %>
-            <li>
-                <a href="/exercises/<%=exercises[i]._id%>">
-                    <%=exercises[i].name %>
-                </a>
-            </li>
-            <% } %>
-    </ul>
-    <nav>
-        <a href="/exercises/new">
-            <button>CREATE</button>
-        </a>
-    </nav>
+    <div class="container">
+        <header>Fit2Go</header>
+        <ul class="navigation">
+            <%- include("./partials/listIndex.ejs") %>
+        </ul>
+        <h1>Health and Fitness</h1>
+        <div class="card">
+            <p>
+
+            </p>
+        </div>
+        <footer>
+            <%- include("./partials/footer.ejs") %>
+        </footer>
+    </div>
 </body>
 
 </html>

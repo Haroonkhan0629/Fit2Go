@@ -9,19 +9,19 @@
     <div class="container">
         <header>Fit2Go</header>
         <ul class="navigation">
-            <%- include("./partials/listExercise.ejs") %>
+            <%- include("./partials/listStretch.ejs") %>
         </ul>
-        <h1>Edit Exercise</h1>
+        <h1>Edit Stretch</h1>
         <div class="card">
-            <form action="/exercises/<%=i%>?_method=PUT" method="POST">
+            <form action="/stretches/<%=i%>?_method=PUT" method="POST">
                 Name: <input type="text" name="name" value="name"> <br>
                 Muscle: <input type="text" name="muscle" value="muscle"> <br>
-                Difficulty: <br> <input type="number" name="difficulty" value="difficulty"> <br>
+                Time: <br> <input type="number" name="time" value="time"> <br>
                 Description: <input type="text" name="description" value="description"> <br>
                 Image: <input type="text" name="image" value="image"> <br>
                 <input class="form" type="submit" value="EDIT">
             </form>
-            <a class="button back" href="/exercises/<%=i%>">BACK</a>
+            <a class ="button back" href="/stretches/<%=i%>">BACK</a>
         </div>
         <footer>
             <%- include("./partials/footer.ejs") %>

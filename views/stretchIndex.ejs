@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partials/head.ejs") %>
+</head>
+
+<body>
+    <div class="container">
+        <header>Fit2Go</header>
+        <ul class="navigation">
+            <%- include("./partials/listStretch.ejs") %>
+        </ul>
+        <h1>Stretches</h1>
+        <ul>
+            <% for(let i=0; i < stretches.length; i++){ %>
+                <div class="card">
+                    <li>
+                        <a href="/stretches/<%=stretches[i]._id%>">
+                            <%=stretches[i].name %>
+                        </a>
+                    </li>
+                </div>
+                <% } %>
+        </ul>
+        <nav>
+            <a class ="button create" href="/stretches/new">
+                CREATE
+            </a>
+        </nav>
+
+
+        <footer>
+            <%- include("./partials/footer.ejs") %>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -2,28 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <%- include("./partials/head.ejs") %>
 </head>
 
 <body>
-    <h1>
-        <%=exercise.name%>
-    </h1>
-    <div>
-        <p>
-            <%=exercise.image%>
-                <%=exercise.muscle%>
-                    <%=exercise.description%>
-                        <%=exercise.difficulty%>
-        </p>
+    <div class="container">
+        <header>Fit2Go</header>
+        <ul class="navigation">
+            <%- include("./partials/listExercise.ejs") %>
+        </ul>
+        <h1>
+            <%=exercise.name%>
+        </h1>
+        <div class="card">
+            <div>
+                <p>
+                    <%=exercise.image%>
+                        <%=exercise.muscle%>
+                            <%=exercise.description%>
+                                <%=exercise.difficulty%>
+                </p>
+            </div>
+            <a class="button back" href="/exercises">BACK</a>
+            <form action="/exercises/<%=exercise._id%>?_method=DELETE" method="POST"
+                style="display:inline; margin-left: 16px">
+                <input class="button delete" type="submit" value="DELETE">
+            </form>
+            <a class="button edit" href="/exercises/<%=exercise._id%>/edit">EDIT</a>
+        </div>
+        <footer>
+            <%- include("./partials/footer.ejs") %>
+        </footer>
     </div>
-    <a href="/exercises"><button>BACK</button></a>
-    <form action="/exercises/<%=exercise._id%>?_method=DELETE" method="POST" style="display:inline; margin-left: 16px">
-        <input type="submit" value="DELETE">
-    </form>
-    <a href="/exercises/<%=exercise._id%>/edit"><button>EDIT</button></a>
 </body>
 
 </html>
