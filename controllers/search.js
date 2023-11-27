@@ -3,16 +3,25 @@ const router = express.Router()
 const Stretch = require("../models/stretch.js")
 const Exercise = require("../models/exercise.js")
 
-Exercise.ensureIndexes({name: "text", muscle: "text"})
+const userSearch = 
 
 router.get("", function (req, res) {
-    Exercise.find({$text: {$search: "back"}}, function (error, data) {
-        if (error) {
-            console.log(error)
+    Exercise.find({$text: {$search: "chest"}}, function (exerciseError, exerciseData) {
+        if (exerciseError) {
+            console.log(exerciseError)
         } else {
-            console.log(data)
+            console.log(exerciseData)
         }
-        res.render("search.ejs")
+        res.render("search.ejs", {
+            exercises: exerciseData
+        })
+    })
+    Stretch.find({$text: {$search: "chest"}}, function (stretchError, stretchData) {
+        if (stretchError) {
+            console.log(stretchError)
+        } else {
+            console.log(stretchData)
+        }
     })
 })
 

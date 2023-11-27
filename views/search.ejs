@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("./partials/head.ejs") %>
 </head>
+
 <body>
-    working
+    <div class="container">
+        <header>Fit2Go</header>
+        <ul class="navigation">
+            <%- include("./partials/searchIndex.ejs") %>
+        </ul>
+        <h1>Search Results</h1>
+        <ul>
+            <% for(let i=0; i < exercises.length; i++){ %>
+                <div class="card">
+                    <li>
+                        <a class="index-list" href="/exercises/<%=exercises[i]._id%>">
+                            <%=exercises[i].name %>
+                        </a>
+                    </li>
+                </div>
+                <% } %>
+        </ul>
+        <footer>
+            <%- include("./partials/footer.ejs") %>
+        </footer>
+    </div>
 </body>
+
 </html>

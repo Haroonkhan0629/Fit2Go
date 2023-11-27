@@ -8,6 +8,7 @@ const exerciseSchema = new mongoose.Schema({
     image: {type: String, required: true},
 })
 
+exerciseSchema.index({name: "text", muscle: "text"})
 const Exercise = mongoose.model("Exercise", exerciseSchema)
 
 module.exports = Exercise

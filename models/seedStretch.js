@@ -2,7 +2,7 @@ module.exports = [
     {
         name: "Windmill",
         muscle: "Chest",
-        time: 45,
+        time: 30,
         description: "",
         image: ""
     },

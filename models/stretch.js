@@ -8,6 +8,7 @@ const stretchSchema = new mongoose.Schema({
     image: {type: String, required: true},
 })
 
+stretchSchema.index({name: "text", muscle: "text"})
 const Stretch = mongoose.model("Stretch", stretchSchema)
 
 module.exports = Stretch
