@@ -7,9 +7,9 @@ module.exports = [
         image: ""
     },
     {
-        name: "Windmill",
-        muscle: "Pectoral",
-        time: 45,
+        name: "Goal Post Lean",
+        muscle: "Chest",
+        time: 30,
         description: "",
         image: ""
     },
