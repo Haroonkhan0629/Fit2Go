@@ -19,7 +19,7 @@ router.get("/stretches", function (req, res) {
 
 router.get("", function (req, res) {
     Exercise.find({}, function (error, data) {
-        res.render("exerciseIndex.ejs", {
+        res.render("exercise/exerciseIndex.ejs", {
             exercises: data,
             tabTitle: "Exercises"
         })
@@ -27,7 +27,7 @@ router.get("", function (req, res) {
 })
 
 router.get("/new", function (req,res) {
-    res.render("exerciseNew.ejs", {
+    res.render("exercise/exerciseNew.ejs", {
         tabTitle: "Creating"
     })
 })
@@ -52,7 +52,7 @@ router.post("", function (req, res) {
 
 router.get("/:id/edit", function (req, res) {
     Exercise.findById(req.params.id, function (error, data) {
-        res.render("exerciseEdit.ejs", {
+        res.render("exercise/exerciseEdit.ejs", {
             exercise: data,
             i: req.params.id,
             tabTitle: "Editing"
@@ -62,7 +62,7 @@ router.get("/:id/edit", function (req, res) {
 
 router.get("/:id", function (req, res) {
     Exercise.findById(req.params.id, function (error, data) {
-        res.render("exerciseShow.ejs", {
+        res.render("exercise/exerciseShow.ejs", {
             exercise: data,
             tabTitle: "Exercises"
         })

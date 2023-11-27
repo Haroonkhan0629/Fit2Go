@@ -2,29 +2,29 @@
 <html lang="en">
 
 <head>
-    <%- include("./partials/head.ejs") %>
+    <%- include("../partials/head.ejs") %>
 </head>
 
 <body>
     <div class="container">
         <header>Fit2Go</header>
         <ul class="navigation">
-            <%- include("./partials/listStretch.ejs") %>
+            <%- include("../partials/listExercise.ejs") %>
         </ul>
-        <h1>Create Stretch</h1>
+        <h1>Edit Exercise</h1>
         <div class="card">
-            <form action="/stretches" method="POST">
-                Name: <input type="text" name="name" placeholder="Stretch Name..."> <br>
+            <form action="/exercises/<%=i%>?_method=PUT" method="POST">
+                Name: <input type="text" name="name" placeholder="Exercise Name..."> <br>
                 Muscle: <input type="text" name="muscle" placeholder="Muscle Targeted..."> <br>
-                Time: <br> <input type="number" name="time" placeholder="In Seconds..."> <br>
+                Difficulty: <br> <input type="number" name="difficulty" placeholder="1-10..."> <br>
                 Description: <input type="text" name="description" placeholder="Movement Description..."> <br>
                 Image: <input type="text" name="image" placeholder="Image Address..."> <br>
-                <input class="form" type="submit" value="CREATE">
+                <input class="form" type="submit" value="EDIT">
             </form>
-            <a class ="button back" href="/stretches">BACK</a>
+            <a class="button back" href="/exercises/<%=i%>">BACK</a>
         </div>
         <footer>
-            <%- include("./partials/footer.ejs") %>
+            <%- include("../partials/footer.ejs") %>
         </footer>
     </div>
 </body>

@@ -2,26 +2,30 @@
 <html lang="en">
 
 <head>
-    <%- include("./partials/head.ejs") %>
+    <%- include("../partials/head.ejs") %>
 </head>
 
 <body>
     <div class="container">
         <header>Fit2Go</header>
         <ul class="navigation">
-            <%- include("./partials/listExercise.ejs") %>
+            <%- include("../partials/listExercise.ejs") %>
         </ul>
         <h1>
             <%=exercise.name%>
         </h1>
         <div class="card">
             <div>
+                <h3>
+                    Muscle Worked: <%=exercise.muscle%>
+                </h3> <br>
+                <h3>
+                    Difficulty Level: <%=exercise.difficulty%>/10
+                </h3><br>
                 <p>
-                    <%=exercise.image%>
-                        <%=exercise.muscle%>
-                            <%=exercise.description%>
-                                <%=exercise.difficulty%>
-                </p>
+                    <%=exercise.description%>
+                </p><br>
+                <img class="training" src="<%=exercise.image%>">
             </div>
             <a class="button back" href="/exercises">BACK</a>
             <form action="/exercises/<%=exercise._id%>?_method=DELETE" method="POST"
@@ -31,7 +35,7 @@
             <a class="button edit" href="/exercises/<%=exercise._id%>/edit">EDIT</a>
         </div>
         <footer>
-            <%- include("./partials/footer.ejs") %>
+            <%- include("../partials/footer.ejs") %>
         </footer>
     </div>
 </body>

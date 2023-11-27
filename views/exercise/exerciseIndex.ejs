@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <%- include("./partials/head.ejs") %>
+    <%- include("../partials/head.ejs") %>
 </head>
 
 <body>
     <div class="container">
         <header>Fit2Go</header>
-        <ul class="navigation">
-            <%- include("./partials/listExercise.ejs") %>
+        <ul class="navigation">.
+            <%- include("../partials/listExercise.ejs") %>
         </ul>
         <h1>Exercises</h1>
         <ul>
             <% for(let i=0; i < exercises.length; i++){ %>
                 <div class="card">
                     <li>
-                        <a href="/exercises/<%=exercises[i]._id%>">
+                        <a class="index-list" href="/exercises/<%=exercises[i]._id%>">
                             <%=exercises[i].name %>
                         </a>
                     </li>
@@ -30,7 +30,7 @@
         </nav>
 
         <footer>
-            <%- include("./partials/footer.ejs") %>
+            <%- include("../partials/footer.ejs") %>
         </footer>
     </div>
 </body>

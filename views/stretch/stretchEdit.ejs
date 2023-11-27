@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head.ejs") %>
+</head>
+
+<body>
+    <div class="container">
+        <header>Fit2Go</header>
+        <ul class="navigation">
+            <%- include("../partials/listStretch.ejs") %>.
+        </ul>
+        <h1>Edit Stretch</h1>
+        <div class="card">
+            <form action="/stretches/<%=i%>?_method=PUT" method="POST">
+                Name: <input type="text" name="name" placeholder="Stretch Name..."> <br>
+                Muscle: <input type="text" name="muscle" placeholder="Muscle Targeted..."> <br>
+                Time: <br> <input type="number" name="time" placeholder="In Seconds..."> <br>
+                Description: <input type="text" name="description" placeholder="Movement Description..."> <br>
+                Image: <input type="text" name="image" placeholder="Image Address..."> <br>
+                <input class="form" type="submit" value="EDIT">
+            </form>
+            <a class ="button back" href="/stretches/<%=i%>">BACK</a>
+        </div>
+        <footer>
+            <%- include("../partials/footer.ejs") %>
+        </footer>
+    </div>
+</body>
+
+</html>

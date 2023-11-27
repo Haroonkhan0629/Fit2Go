@@ -1,17 +1,21 @@
 <%- include("../partials/newUser.ejs") %>
-    <div class="container">
-        <% if (currentUser) { %>
-            <h1>Welcome <%= currentUser.username %>
-            </h1>
-            <div class="card">
-                <p>
-                    You are currently logged in to your account, click the button below to log out.
-                </p>
-                <form action="/sessions?_method=DELETE" method="POST">
-                    <input type="submit" class="form" value="Log Out" class="btn-small red" />
-                </form>
-            </div>
-            <% } else { %>
+
+    <body>
+        <div class="container">
+            <% if (currentUser) { %>
+                <h1>Welcome <%= currentUser.username %>
+                </h1>
+                <div class="card">
+                    <p>
+                        You are currently logged in to your account, click the button below to log out.
+                    </p>
+                    <form action="/sessions?_method=DELETE" method="POST">
+                        <input type="submit" class="form" value="LOG-OUT" class="btn-small red" />
+                    </form>
+                </div>
+        </div>
+        <% } else { %>
+            <div class="container">
                 <h1>User Registration</h1>
                 <div class="card">
                     <form action="/users" method="POST">
@@ -23,11 +27,14 @@
                             <label for="password">Password:</label> <br>
                             <input type="password" name="password" placeholder="Password...">
                         </fieldset>
-                        <input type="submit" class="form" value="Register">
+                        <input type="submit" class="form" value="REGISTER">
                     </form>
                 </div>
-                <% } %>
-    </div>
+                <footer>
+                    <%- include("../partials/footer.ejs") %>
+                </footer>
+            </div>
+            <% } %>
     </body>
 
     </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head.ejs") %>
+</head>
+
+<body>
+    <div class="container">
+        <header>Fit2Go</header>
+        <ul class="navigation">
+            <%- include("../partials/listStretch.ejs") %>
+        </ul>
+        <h1>
+            <%=stretch.name%>
+        </h1>
+        <div class="card">
+            <div>
+                <h3>
+                    Muscle Targeted: <%=stretch.muscle%>
+                </h3><br>
+                <h3>
+                    Stretch Time: <%=stretch.time%> seconds
+                </h3><br>
+                <p>
+                    <%=stretch.description%>
+                </p><br>
+                <img src="<%=stretch.image%>">
+            </div>
+            <a class="button back" href="/stretches">BACK</a>
+            <form action="/stretches/<%=stretch._id%>?_method=DELETE" method="POST"
+                style="display:inline; margin-left: 16px">
+                <input class=" button delete" type="submit" value="DELETE">
+            </form>
+            <a class="button edit" href="/stretches/<%=stretch._id%>/edit">EDIT</a>
+        </div>
+        <footer>
+            <%- include("../partials/footer.ejs") %>
+        </footer>
+    </div>
+</body>
+
+</html>

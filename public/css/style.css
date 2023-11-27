@@ -1,133 +1,195 @@
 body {
-    background-image: url("https://wallpapercave.com/wp/wp2483004.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: whitesmoke;
+  background-image: url("https://wallpapercave.com/wp/wp2483004.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: whitesmoke;
+  text-align: center;
 }
 
 .navigation {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    border-radius: 5px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(72, 69, 69);
+  overflow: hidden;
+}
+
+.navigation .search {
+  float: right;
+}
+
+.navigation input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navigation .search button:hover {
+  background: grey;
+}
+
+.navigation .search button {
+  float: right;
+  padding: 6px 10px;
+  background: #ddd;
+  font-size: 17px;
+  border: 1px solid #ccc;
+  cursor: pointer;
 }
 
 .nav {
-    float: left;
+  float: left;
 }
 
 .nav:last-child {
-    border-right: none;
+  border-right: none;
 }
 
 .nav .bar {
-    display: block;
-    color: whitesmoke;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: whitesmoke;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .nav .bar:hover {
-    background-color: black;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .active {
-    background-color: rgb(87, 146, 154);
+  background-color: cadetblue;
+}
+
+.navigation .bar.active {
+  background-color: cadetblue;
+  color: whitesmoke;
 }
 
 footer {
-    background-color: #333;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 4px;
-  }
+  background-color: rgb(72, 69, 69);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
 
 header {
-    padding: 30px;
-    text-align: center;
-    background: cadetblue;
-    border-radius: 4px;
-  }
-  
-header h1 {
-    font-size: 50px;
-  }
+  padding: 30px;
+  background: cadetblue;
+  font-size: 70px;
+  font-style: oblique;
+}
 
 .card {
-    background-color: rgb(48, 33, 33);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 4px;
+  background-color: rgb(72, 69, 69);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  input.form[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: whitesmoke;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
 
-  .button {
-    background-color: #4CAF50;
-    padding: 8px 14px;
-    margin: 8px 0px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+input.form[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: whitesmoke;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-  .back {
-    width: 5.9%;
-  }
+.button {
+  background-color: #4CAF50;
+  padding: 5px 10px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-  .edit {
-    width: 4.7%;
-  }
+.back {
+  width: 5.9%;
+  text-decoration: none;
+  color: whitesmoke;
+}
 
-  .create {
-    width: 7.8%;
-  }
+.edit {
+  width: 4.7%;
+  text-decoration: none;
+  color: whitesmoke;
+}
 
-  .delete {
-    width: 13%;
-  }
+.create {
+  width: 7.8%;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.delete {
+  width: 13%;
+  color: whitesmoke;
+  margin-right: 15px;
+}
 
 label[for=username] {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 label[for=password] {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 p {
   color: whitesmoke;
+}
+
+.icon {
+  margin-right: 30px;
+  margin-top: 15px;
+  transform: scale(1.8);
+}
+
+.index-list {
+  text-decoration: none;
+  color: whitesmoke
+}
+
+.index-list:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: white;
+}
+
+.training {
+  max-width: 250px;
+  max-height: 250px;
+  margin-bottom: 25px;
+  border-radius: 8px;
 }

@@ -13,7 +13,7 @@ const seedStretch = require("../models/seedStretch.js")
 
 router.get("", function (req, res) {
     Stretch.find({}, function (error, data) {
-        res.render("stretchIndex.ejs", {
+        res.render("stretch/stretchIndex.ejs", {
             stretches: data,
             tabTitle: "Stretches"
         })
@@ -21,7 +21,7 @@ router.get("", function (req, res) {
 })
 
 router.get("/new", function (req,res) {
-    res.render("stretchNew.ejs", {
+    res.render("stretch/stretchNew.ejs", {
         tabTitle: "Creating"
     })
 })
@@ -46,7 +46,7 @@ router.post("", function (req, res) {
 
 router.get("/:id/edit", function (req, res) {
     Stretch.findById(req.params.id, function (error, data) {
-        res.render("stretchEdit.ejs", {
+        res.render("stretch/stretchEdit.ejs", {
             stretch: data,
             i: req.params.id,
             tabTitle: "Editing"
@@ -56,7 +56,7 @@ router.get("/:id/edit", function (req, res) {
 
 router.get("/:id", function (req, res) {
     Stretch.findById(req.params.id, function (error, data) {
-        res.render("stretchShow.ejs", {
+        res.render("stretch/stretchShow.ejs", {
             stretch: data,
             tabTitle: "Stretches"
         })

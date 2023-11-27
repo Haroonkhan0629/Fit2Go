@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>
         <%=tabTitle%>
     </title>
@@ -20,8 +21,14 @@
             <li class="nav"><a class="bar" href="/exercises">Training</a></li>
             <li class="nav"><a class="bar" href="/stretches">Recovery</a></li>
             <li class="nav" style="float:right"><a class="bar" href="/about">About</a></li>
-            <li class="nav"><a class="bar active" href="/users/new">Register</a></li>
+            <li class="nav"><a class="bar active" href="/users/new">Registery</a></li>
             <li class="nav"><a class="bar" href="/sessions/new">Sign-In</a></li>
+            <div class="search">
+                <form action="/searches">
+                  <input type="text" placeholder="Search..." name="search">
+                  <button type="submit"><i class="search-submit"></i></button>
+                </form>
+              </div>
         </ul>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
