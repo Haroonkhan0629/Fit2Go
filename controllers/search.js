@@ -4,20 +4,23 @@ const Stretch = require("../models/stretch.js")
 const Exercise = require("../models/exercise.js")
 
 
-router.get("", function (req, res) {
-    const userSearch = req.query.search
-    Exercise.find({$text: {$search: userSearch}}, function (exerciseError, exerciseData) {
+router.get("", async function (req, res) {
+    try {
+        const userSearch = req.query.search
+
+        const exerciseData = await Exercise.find({ $text: { $search: userSearch } }).exec()
+        const stretchData = await Stretch.find({ $text: { $search: userSearch } }).exec()
+            res.render("search.ejs", {
+                exercises: exerciseData,
+                stretches: stretchData
+            })
+    } catch (error) {
         res.render("search.ejs", {
-            exercises: exerciseData
-        })
-    })
-    Stretch.find({$text: {$search: userSearch}}, function (stretchError, stretchData) {
-        if (stretchError) {
-            console.log(stretchError)
-        } else {
-            console.log(stretchData)
-        }
-    })
-})
+            exercises: [],
+            stretches: [],
+            error: 'An error occurred while searching.'
+        });
+    }
+});
 
 module.exports = router

@@ -133,13 +133,13 @@ input.form[type=submit] {
 }
 
 .back {
-  width: 5.9%;
+  width: 14.5%;
   text-decoration: none;
   color: whitesmoke;
 }
 
 .edit {
-  width: 4.7%;
+  width: 12%;
   text-decoration: none;
   color: whitesmoke;
 }
@@ -151,9 +151,9 @@ input.form[type=submit] {
 }
 
 .delete {
-  width: 13%;
+  width: 25%;
   color: whitesmoke;
-  margin-right: 15px;
+  margin-right: 16px;
 }
 
 label[for=username] {
@@ -192,4 +192,15 @@ a {
   max-height: 250px;
   margin-bottom: 25px;
   border-radius: 8px;
+}
+
+.index-heading {
+  margin-bottom: 25px;
+}
+
+.width {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
 }

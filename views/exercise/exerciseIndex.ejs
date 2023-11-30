@@ -3,6 +3,7 @@
 
 <head>
     <%- include("../partials/head.ejs") %>
+        <title>Exercises</title>
 </head>
 
 <body>
@@ -13,25 +14,30 @@
         </ul>
         <h1>Exercises</h1>
         <ul>
-            <% for(let i=0; i < exercises.length; i++){ %>
-                <div class="card">
-                    <li>
-                        <a class="index-list" href="/exercises/<%=exercises[i]._id%>">
-                            <%=exercises[i].name %>
-                        </a>
-                    </li>
+            <div class="card-container">
+                <% for(let i=0; i < exercises.length; i++){ %>
+                    <div class="card width">
+                        <li>
+                            <a class="index-list" href="/exercises/<%=exercises[i]._id%>">
+                                <h2 class="index-heading">
+                                    <%=exercises[i].name %>
+                                </h2> <br>
+                                <img class="training" src="<%=exercises[i].image%>">
+                            </a>
+                        </li>
+                    </div>
+                    <% } %>
                 </div>
-                <% } %>
-        </ul>
-        <nav>
-            <a class ="button create" href="/exercises/new">
-                CREATE
-            </a>
-        </nav>
-
-        <footer>
-            <%- include("../partials/footer.ejs") %>
-        </footer>
+            </ul>
+            <nav>
+                <a class="button create" href="/exercises/new">
+                    CREATE
+                </a>
+            </nav>
+            
+            <footer>
+                <%- include("../partials/footer.ejs") %>
+            </footer>
     </div>
 </body>
 
