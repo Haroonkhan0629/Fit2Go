@@ -1,10 +1,10 @@
 const express = require("express")
-const router = express.Router()
+const search = express.Router()
 const Stretch = require("../models/stretch.js")
 const Exercise = require("../models/exercise.js")
 
 
-router.get("", async function (req, res) {
+search.get("", async function (req, res) {
     try {
         const userSearch = req.query.search
 
@@ -23,4 +23,4 @@ router.get("", async function (req, res) {
     }
 });
 
-module.exports = router
+module.exports = search

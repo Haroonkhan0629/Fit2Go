@@ -1,5 +1,5 @@
 const express = require("express")
-const router = express.Router()
+const stretch = express.Router()
 const Stretch = require("../models/stretch.js")
 const seedStretch = require("../models/seedStretch.js")
 
@@ -11,7 +11,7 @@ const seedStretch = require("../models/seedStretch.js")
 //     }
 // })
 
-router.get("", function (req, res) {
+stretch.get("", function (req, res) {
     Stretch.find({}, function (error, data) {
         res.render("stretch/stretchIndex.ejs", {
             stretches: data,
@@ -20,31 +20,31 @@ router.get("", function (req, res) {
     })
 })
 
-router.get("/new", function (req,res) {
+stretch.get("/new", function (req,res) {
     res.render("stretch/stretchNew.ejs", {
         tabTitle: "Creating"
     })
 })
 
-router.delete("/:id", function (req, res) {
+stretch.delete("/:id", function (req, res) {
     Stretch.findByIdAndDelete(req.params.id, function () {
         res.redirect("/stretches")
     })
 })
 
-router.put("/:id", function (req, res) {
+stretch.put("/:id", function (req, res) {
     Stretch.findByIdAndUpdate(req.params.id, req.body, {new: true}, function () {
         res.redirect("/stretches/" + req.params.id)
     })
 })
 
-router.post("", function (req, res) {
+stretch.post("", function (req, res) {
     Stretch.create(req.body, function (error, data) {
         res.redirect("/stretches")
     })
 })
 
-router.get("/:id/edit", function (req, res) {
+stretch.get("/:id/edit", function (req, res) {
     Stretch.findById(req.params.id, function (error, data) {
         res.render("stretch/stretchEdit.ejs", {
             stretch: data,
@@ -54,7 +54,7 @@ router.get("/:id/edit", function (req, res) {
     })
 })
 
-router.get("/:id", function (req, res) {
+stretch.get("/:id", function (req, res) {
     Stretch.findById(req.params.id, function (error, data) {
         res.render("stretch/stretchShow.ejs", {
             stretch: data,
@@ -63,4 +63,4 @@ router.get("/:id", function (req, res) {
     })
 })
 
-module.exports = router
+module.exports = stretch

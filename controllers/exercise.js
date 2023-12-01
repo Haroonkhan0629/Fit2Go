@@ -1,5 +1,5 @@
 const express = require("express")
-const router = express.Router()
+const exercise = express.Router()
 const Exercise = require("../models/exercise.js")
 const seedExercise = require("../models/seedExercise.js")
 
@@ -11,13 +11,13 @@ const seedExercise = require("../models/seedExercise.js")
 //     }
 // })
 
-router.get("/stretches", function (req, res) {
+exercise.get("/stretches", function (req, res) {
     res.render("index.ejs", {
         tabTitle: "Fitness"
     })
 })
 
-router.get("", function (req, res) {
+exercise.get("", function (req, res) {
     Exercise.find({}, function (error, data) {
         res.render("exercise/exerciseIndex.ejs", {
             exercises: data,
@@ -26,31 +26,31 @@ router.get("", function (req, res) {
     })
 })
 
-router.get("/new", function (req,res) {
+exercise.get("/new", function (req,res) {
     res.render("exercise/exerciseNew.ejs", {
         tabTitle: "Creating"
     })
 })
 
-router.delete("/:id", function (req, res) {
+exercise.delete("/:id", function (req, res) {
     Exercise.findByIdAndDelete(req.params.id, function () {
         res.redirect("/exercises")
     })
 })
 
-router.put("/:id", function (req, res) {
+exercise.put("/:id", function (req, res) {
     Exercise.findByIdAndUpdate(req.params.id, req.body, {new: true}, function () {
         res.redirect("/exercises/" + req.params.id)
     })
 })
 
-router.post("", function (req, res) {
+exercise.post("", function (req, res) {
     Exercise.create(req.body, function (error, data) {
         res.redirect("/exercises")
     })
 })
 
-router.get("/:id/edit", function (req, res) {
+exercise.get("/:id/edit", function (req, res) {
     Exercise.findById(req.params.id, function (error, data) {
         res.render("exercise/exerciseEdit.ejs", {
             exercise: data,
@@ -60,7 +60,7 @@ router.get("/:id/edit", function (req, res) {
     })
 })
 
-router.get("/:id", function (req, res) {
+exercise.get("/:id", function (req, res) {
     Exercise.findById(req.params.id, function (error, data) {
         res.render("exercise/exerciseShow.ejs", {
             exercise: data,
@@ -69,4 +69,4 @@ router.get("/:id", function (req, res) {
     })
 })
 
-module.exports = router
+module.exports = exercise

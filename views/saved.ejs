@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partials/head.ejs") %>
+        <title>Saved</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>Fit2Go</header>
+        <ul class="navigation">
+            <%- include("./partials/listSaved.ejs") %>
+        </ul>
+        <h1>Saved Exercises/Stretches</h1>
+        <ul>
+            <% for(let i=0; i < exercises.length; i++){ %>
+                <div class="card width">
+                    <li>
+                        <a class="index-list" href="/exercises/<%=exercises[i]._id%>">
+                            <h2 class="index-heading">
+                                <%=exercises[i].name %>
+                            </h2> <br>
+                            <img class="training" src="<%=exercises[i].image%>"> 
+                        </a>
+                    </li>
+                </div>
+                <% } %>
+        </ul>
+        <ul>
+            <% for(let i=0; i < stretches.length; i++){ %>
+                <div class="card width">
+                    <li>
+                        <a class="index-list" href="/stretches/<%=stretches[i]._id%>">
+                            <h2 class="index-heading">
+                                <%=stretches[i].name %>
+                            </h2> <br>
+                            <img class="training" src="<%=stretches[i].image%>">
+                        </a>
+                    </li>
+                </div>
+                <% } %>
+        </ul>
+        <footer>
+            <%- include("./partials/footer.ejs") %>
+        </footer>
+    </div>
+</body>
+
+</html>

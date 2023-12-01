@@ -11,6 +11,7 @@ const aboutController = require("./controllers/about.js")
 const userController = require("./controllers/user.js")
 const sessionController = require("./controllers/session.js")
 const searchController = require("./controllers/search.js")
+const savedController = require("./controllers/saved.js")
 
 const PORT = process.env.PORT || 3000
 const mongodbURI = process.env.MONGODBURI
@@ -37,6 +38,7 @@ app.use("/about", aboutController)
 app.use("/users", userController)
 app.use("/sessions", sessionController)
 app.use("/searches", searchController)
+app.use("/saved", savedController)
 
 app.get("/", function (req, res) {
     res.render("index.ejs", {

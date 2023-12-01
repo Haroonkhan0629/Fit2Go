@@ -71,10 +71,13 @@ body {
 }
 
 footer {
+  display: block;
+  margin: 0 auto;
   background-color: rgb(72, 69, 69);
   padding: 20px;
   margin-top: 20px;
   border-radius: 8px;
+  max-width: 200px;
 }
 
 header {
@@ -96,7 +99,7 @@ ul {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -156,6 +159,10 @@ input.form[type=submit] {
   margin-right: 16px;
 }
 
+.saved {
+  text-decoration: none;
+}
+
 label[for=username] {
   color: whitesmoke;
 }
@@ -205,6 +212,3 @@ a {
   margin-top: 25px;
 }
 
-.footer-span {
-  text-align: center;
-}
