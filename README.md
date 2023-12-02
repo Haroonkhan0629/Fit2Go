@@ -37,7 +37,6 @@ Fit2Go is a fitness application that gives users access to information about tra
 * User can navigate through data
 
 ## <a name="sketch"></a>Whiteboard Images
-*Original Whiteboard sketch
 <img src="https://i.postimg.cc/KYx9Jz2q/IMG-4924.jpg" alt="Original Sketch"/> <br>
 <img src="https://i.postimg.cc/5yYp6QB0/IMG-4925.jpg" alt="Original Sketch"/> <br>
 <img src="https://i.postimg.cc/5yhgv9gm/IMG-4926.jpg" alt="Original Sketch"/>
