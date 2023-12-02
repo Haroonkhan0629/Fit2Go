@@ -8,8 +8,11 @@ Fit2Go is a fitness application that gives users access to information about tra
 ## Table of Contents
 * [Technologies Used](#technologiesused)
 * [Features](#features)
+* [Whiteboard Sketch](#sketch)
+* [Trello Planning (MVP)](#trello)
 * [Project Next Steps](#nextsteps)
-* [Deployed App](#deployment)
+* [Deployed Links](#deployment)
+* [Works Cited](#cited)
 * [About the Author](#author)
 
 ## <a name="technologiesused"></a>Technologies Used
@@ -25,7 +28,7 @@ Fit2Go is a fitness application that gives users access to information about tra
 * DOTENV
 
 
-## Features
+## <a name="features"></a>Features
 * User can creaate data
 * User can edit data
 * User can delete data
@@ -33,13 +36,13 @@ Fit2Go is a fitness application that gives users access to information about tra
 * User can save data
 * User can navigate through data
 
-## Whiteboard Images
+## <a name="sketch"></a>Whiteboard Images
 *Original Whiteboard sketch
-<img src="https://trello.com/c/07Jqakz3/9-https-postimgcc-gxtq0gr8" alt="Original Sketch"/> <br>
-<img src="https://trello.com/c/V09xtlw7/10-https-postimgcc-ctwfzh5y" alt="Original Sketch"/> <br>
-<img src="https://trello.com/c/DWyvEySH/11-https-postimgcc-p5bkmhg9" alt="Original Sketch"/>
+<img src="https://i.postimg.cc/KYx9Jz2q/IMG-4924.jpg" alt="Original Sketch"/> <br>
+<img src="https://i.postimg.cc/5yYp6QB0/IMG-4925.jpg" alt="Original Sketch"/> <br>
+<img src="https://i.postimg.cc/5yhgv9gm/IMG-4926.jpg" alt="Original Sketch"/>
 
-## Trello Planning (MVP)
+## <a name="trello"></a>Trello Planning (MVP)
 * User can view list of exercises on index page
 * User clicks and is taken to the show page of the exercise clicked
 * User has ability to delete, edit or create new exercises
@@ -48,13 +51,14 @@ Fit2Go is a fitness application that gives users access to information about tra
 * Application will be styled more effeciently and professionally
 * New Collection: Nutritional Data
 * Member specific: User cannot save, create, edit, or delete data unless they are a member
+* Media Queries: Allowing users to access application on smaller devices
 
 ## <a name="deployment"></a>Deployed Links
-* [Application/Website]()
+* [Application/Website](https://fit2go-ga7a.onrender.com)
 * [Trello Page](https://trello.com/b/fjhqoMlC/fit2go)
 * [Github Repo](https://github.com/Haroonkhan0629/Fit2Go)
     
-## Works Cited:
+## <a name="cited"></a>Works Cited:
 * [Stretch Images](https://www.meanmuscles.com/) 
 * [Exercise Images](https://strengthlevel.com/)
 

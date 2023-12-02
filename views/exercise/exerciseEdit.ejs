@@ -3,7 +3,7 @@
 
 <head>
     <%- include("../partials/head.ejs") %>
-    <title>Edit</title>
+        <title>Edit</title>
 </head>
 
 <body>
@@ -15,11 +15,11 @@
         <h1>Edit Exercise</h1>
         <div class="card">
             <form action="/exercises/<%=i%>?_method=PUT" method="POST">
-                Name: <input type="text" name="name" placeholder="Exercise Name..."> <br>
-                Muscle: <input type="text" name="muscle" placeholder="Muscle Targeted..."> <br>
-                Difficulty: <br> <input type="number" name="difficulty" placeholder="1-10..."> <br>
-                Description: <input type="text" name="description" placeholder="Movement Description..."> <br>
-                Image: <input type="text" name="image" placeholder="Image Address..."> <br>
+                Name: <input type="text" name="name" value="<%=exercise.name%>"> <br>
+                Muscle: <input type="text" name="muscle" value="<%=exercise.muscle%>"> <br>
+                Difficulty: <br> <input type="number" name="difficulty" value="<%=exercise.difficulty%>"> <br>
+                Description: <input type="text" name="description" value="<%=exercise.description%>"> <br>
+                Image: <input type="text" name="image" value="<%=exercise.image%>"> <br>
                 <input class="form" type="submit" value="EDIT">
             </form>
             <a class="button back" href="/exercises/<%=i%>">BACK</a>
