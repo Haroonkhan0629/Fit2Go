@@ -37,7 +37,6 @@ Fit2Go is a fitness application that gives users access to information about tra
 * User can navigate through data
 
 ## <a name="sketch"></a>Whiteboard Images
-*Original Whiteboard sketch
 <img src="https://i.postimg.cc/KYx9Jz2q/IMG-4924.jpg" alt="Original Sketch"/> <br>
 <img src="https://i.postimg.cc/5yYp6QB0/IMG-4925.jpg" alt="Original Sketch"/> <br>
 <img src="https://i.postimg.cc/5yhgv9gm/IMG-4926.jpg" alt="Original Sketch"/>
@@ -49,9 +48,9 @@ Fit2Go is a fitness application that gives users access to information about tra
 
 ## <a name="nextsteps"></a>Project Next Steps
 * Application will be styled more effeciently and professionally
-* New Collection: Nutritional Data
-* Member specific: User cannot save, create, edit, or delete data unless they are a member
-* Media Queries: Allowing users to access application on smaller devices
+* New Collection: Nutrition Data
+* Member specific: Users cannot save, create, edit, or delete data unless they are a member
+* Media Queries: Allow users to access application on smaller devices
 
 ## <a name="deployment"></a>Deployed Links
 * [Application/Website](https://fit2go-ga7a.onrender.com)
