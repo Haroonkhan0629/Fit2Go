@@ -35,24 +35,23 @@ Fit2Go is a fitness application that gives users access to information about tra
 
 ## Whiteboard Images
 *Original Whiteboard sketch
-<img src="https://trello.com/c/07Jqakz3/9-https-postimgcc-gxtq0gr8" alt="Original Sketch"/>
-<img src="https://trello.com/c/V09xtlw7/10-https-postimgcc-ctwfzh5y" alt="Original Sketch"/>
+<img src="https://trello.com/c/07Jqakz3/9-https-postimgcc-gxtq0gr8" alt="Original Sketch"/> <br>
+<img src="https://trello.com/c/V09xtlw7/10-https-postimgcc-ctwfzh5y" alt="Original Sketch"/> <br>
 <img src="https://trello.com/c/DWyvEySH/11-https-postimgcc-p5bkmhg9" alt="Original Sketch"/>
 
 ## Trello Planning (MVP)
 * User can view list of exercises on index page
 * User clicks and is taken to the show page of the exercise clicked
 * User has ability to delete, edit or create new exercises
-* [Trello Page](https://trello.com/b/fjhqoMlC/fit2go)
 
 ## <a name="nextsteps"></a>Project Next Steps
 * Application will be styled more effeciently and professionally
 * New Collection: Nutritional Data
 * Member specific: User cannot save, create, edit, or delete data unless they are a member
 
-## <a name="deployment"></a>Deployed Link
+## <a name="deployment"></a>Deployed Links
 * [Application/Website]()
-
+* [Trello Page](https://trello.com/b/fjhqoMlC/fit2go)
 * [Github Repo](https://github.com/Haroonkhan0629/Fit2Go)
     
 ## Works Cited:
