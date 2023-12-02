@@ -48,9 +48,9 @@ Fit2Go is a fitness application that gives users access to information about tra
 
 ## <a name="nextsteps"></a>Project Next Steps
 * Application will be styled more effeciently and professionally
-* New Collection: Nutritional Data
-* Member specific: User cannot save, create, edit, or delete data unless they are a member
-* Media Queries: Allowing users to access application on smaller devices
+* New Collection: Nutrition Data
+* Member specific: Users cannot save, create, edit, or delete data unless they are a member
+* Media Queries: Allow users to access application on smaller devices
 
 ## <a name="deployment"></a>Deployed Links
 * [Application/Website](https://fit2go-ga7a.onrender.com)
