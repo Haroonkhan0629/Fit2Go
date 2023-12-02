@@ -53,7 +53,7 @@ Fit2Go is a fitness application that gives users access to information about tra
 * Media Queries: Allow users to access application on smaller devices
 
 ## <a name="deployment"></a>Deployed Links
-* [Application/Website](https://fit2go-ga7a.onrender.com)
+* [Application/Website](https://fit2go-gtmn.onrender.com)
 * [Trello Page](https://trello.com/b/fjhqoMlC/fit2go)
 * [Github Repo](https://github.com/Haroonkhan0629/Fit2Go)
     
