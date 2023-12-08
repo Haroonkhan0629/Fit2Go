@@ -5,7 +5,7 @@ module.exports = [
         difficulty: 2,
         description: "Start in the position shown below - Lower yourself until your chest touches the ground - Push through the ground to bring yourself back up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/diamond-push-ups-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Dip",
@@ -13,7 +13,7 @@ module.exports = [
         difficulty: 4,
         description: "Start in the position shown below - Lower yourself until you feel a good and comfortable stretch through your chest - Push down into the bars to bring yourself back up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/dips-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Barbell Bench Press",
@@ -21,7 +21,7 @@ module.exports = [
         difficulty: 5,
         description: "Start in the position shown below - Lower the bar until it touches your chest - Push the bar straght up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/bench-press-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Dumbell Bench Press",
@@ -29,7 +29,7 @@ module.exports = [
         difficulty: 6,
         description: "Start in the position shown below - Lower the dumbells until they touch your chest - Push the dumbells up and bring them closer together at the top - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/dumbbell-bench-press-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Machine Chest Press",
@@ -37,7 +37,7 @@ module.exports = [
         difficulty: 4,
         description: "Start in the position shown below - Lower the bar until it touches your chest - Push the bar straight up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/smith-machine-bench-press-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Dumbell Fly",
@@ -45,7 +45,7 @@ module.exports = [
         difficulty: 8,
         description: "Start in the position shown below - Face your palms towards one another - Push your palms towards each other until the dumbells touch - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/dumbbell-fly-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Cable Fly",
@@ -53,7 +53,7 @@ module.exports = [
         difficulty: 6,
         description: "Start in the position shown below - Face your palms towards one another - Push your palms towards each other until the handles touch - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/cable-fly-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Machine Fly",
@@ -61,7 +61,7 @@ module.exports = [
         difficulty: 4,
         description: "Start in the position shown below - Face your palms towards one another - Push your palms towards each other until the handles touch - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/machine-chest-fly-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Pull Up/Chin Up",
@@ -69,7 +69,7 @@ module.exports = [
         difficulty: 6,
         description: "Start in the position shown below - Grip the bar tightly - Pull yourself up by driving your elbows down towards your torso - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/pull-ups-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Cable Pulldown",
@@ -77,7 +77,7 @@ module.exports = [
         difficulty: 5,
         description: "Start in the position shown below - Grip the handle tightly - Pull the handle by driving your elbows down towards your torse - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/lat-pulldown-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Cable Row",
@@ -85,7 +85,7 @@ module.exports = [
         difficulty: 5,
         description: "Start in the position shown below - Grip the handle tightly - Pull the handle by driving your elbows back towards your torse - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/seated-cable-row-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Dumbell Row",
@@ -93,7 +93,7 @@ module.exports = [
         difficulty: 6,
         description: "Start in the position shown below - Grip the dumbell tightly - Pull the dumbell by driving your elbows back towards your torse - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/dumbbell-row-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Barbell Row",
@@ -101,7 +101,7 @@ module.exports = [
         difficulty: 7,
         description: "Start in the position shown below - Grip the barbell tightly and brace your core - Pull the barbell by driving your elbows back towards your torse - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/bent-over-row-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Machine Row",
@@ -109,7 +109,7 @@ module.exports = [
         difficulty: 4,
         description: "Start in the position shown below - Grip the handle tightly - Pull the handle by driving your elbows back towards your torse - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/machine-row-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Dumbell Shrug",
@@ -117,7 +117,7 @@ module.exports = [
         difficulty: 4,
         description: "Start in the position shown below - Grip the dumbell tightly - Lift your shoulders up and back while keeping your arms and torso straight - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/dumbbell-shrug-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Barbell Arm Curl",
@@ -125,7 +125,7 @@ module.exports = [
         difficulty: 6,
         description: "Start in the position shown below - Flex your arms at the elbow joint to move your weight upwards - Pull the weight all the way up to your chest - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/barbell-curl-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Dumbell Arm Curl",
@@ -133,7 +133,7 @@ module.exports = [
         difficulty: 6,
         description: "Start in the position shown below - Flex your arms at the elbow joint to move your weight upwards - Pull the weight all the way up to your chest - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/dumbbell-curl-4-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Cable Arm Curl",
@@ -141,7 +141,7 @@ module.exports = [
         difficulty: 5,
         description: "Start in the position shown below - Flex your arms at the elbow joint to move your weight upwards - Pull the weight all the way up to your chest - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/cable-bicep-curl-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Machine Arm Curl",
@@ -149,7 +149,7 @@ module.exports = [
         difficulty: 4,
         description: "Start in the position shown below - Flex your arms at the elbow joint to move your weight upwards - Pull the weight all the way up to your chest - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/machine-bicep-curl-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Barbell Arm Extension",
@@ -157,7 +157,7 @@ module.exports = [
         difficulty: 6,
         description: "Start in the position shown below - Extend your arms at the elbow joint to move the weight up - Push the weight all the way up until your arm full extend - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/lying-tricep-extension-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Dumbell Arm Extension",
@@ -165,7 +165,7 @@ module.exports = [
         difficulty: 7,
         description: "Start in the position shown below - Extend your arms at the elbow joint to move the weight up - Push the weight all the way up until your arm full extend - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/dumbbell-tricep-kickback-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Cable Arm Extension",
@@ -173,7 +173,7 @@ module.exports = [
         difficulty: 5,
         description: "Start in the position shown below - Extend your arms at the elbow joint to move the weight back - Push the weight all the way back until your arm full extend - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/cable-overhead-tricep-extension-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Machine Arm Extension",
@@ -181,7 +181,7 @@ module.exports = [
         difficulty: 4,
         description: "Start in the position shown below - Extend your arms at the elbow joint to move the weight down - Push the weight all the way down until your arm full extend - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/machine-tricep-extension-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Dumbell Lateral Raise",
@@ -189,7 +189,7 @@ module.exports = [
         difficulty: 7,
         description: "Start in the position shown below - Move your arms up laterally until they are parallel with your shoulders - Mare sure the lateral side of your shoulder is facing up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/dumbbell-lateral-raise-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Cable Lateral Raise",
@@ -197,7 +197,7 @@ module.exports = [
         difficulty: 5,
         description: "Start in the position shown below - Move your arm up laterally until they are parallel with your shoulders - Make sure the lateral side of your shoulder is facing up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/cable-lateral-raise-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Rope Face Pull",
@@ -205,7 +205,7 @@ module.exports = [
         difficulty: 6,
         description: "Start in the position shown below - Flare your elbows out until they are parallel with your chin - Pull the weight using your elbows to drive backwards - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/face-pull-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Barbell Overhead Press",
@@ -213,7 +213,7 @@ module.exports = [
         difficulty: 8,
         description: "Start in the position shown below - Plant your feet and brace your core - Push the bar straight up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/shoulder-press-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Machine Lateral Raise",
@@ -221,7 +221,7 @@ module.exports = [
         difficulty: 6,
         description: "Start in the position shown below - Move your arms up laterally until they are parallel with your shoulders - Make sure the lateral side of your shoulder is facing up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/machine-lateral-raise-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Barbell Wrist Curl",
@@ -229,7 +229,7 @@ module.exports = [
         difficulty: 5,
         description: "Start in the position shown below - Use your legs to rest your elbows - Face your palms up and flex your wrist up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/wrist-curl-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Barbell Wrist Extension",
@@ -237,7 +237,7 @@ module.exports = [
         difficulty: 7,
         description: "Start in the position shown below - Use your legs to rest your elbows - Face your palms down and flex your wrist up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/reverse-wrist-curl-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Cable Crunch",
@@ -245,7 +245,7 @@ module.exports = [
         difficulty: 5,
         description: "Start in the position shown below - Fully extend your torso and keep your head inline - Crunch your torso until your knees hit your chest - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/cable-crunch-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Leg Raise",
@@ -253,7 +253,7 @@ module.exports = [
         difficulty: 7,
         description: "Start in the position shown below - Slowly lower your legs while keeping them straight - Stop right before your feet touch the floor - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/lying-leg-raise-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Machine Crunch",
@@ -261,7 +261,7 @@ module.exports = [
         difficulty: 4,
         description: "Start in the position shown below - Fully extend your torso and keep your head inline - Crunch your torso until your knees hit your chest - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/machine-seated-crunch-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Machine Leg Press",
@@ -269,7 +269,7 @@ module.exports = [
         difficulty: 5,
         description: "Start in the position shown below - Plant your feet - Slowly lower the weight until your knees touch your chest - Push the weight upwards - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/vertical-leg-press-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Barbell Squat",
@@ -277,7 +277,7 @@ module.exports = [
         difficulty: 7,
         description: "Start in the position shown below - Brace your core and plant your feet - Slowly lower into a squat and push through the ground to move the weight back up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/squat-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Dumbell Split Squat",
@@ -285,7 +285,7 @@ module.exports = [
         difficulty: 8,
         description: "Start in the position shown below - Brace your core and get your balance - Slowly lower into a split squat while staying upright and push through the ground to move the weight back up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/bulgarian-split-squat-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Machine Leg Extension",
@@ -293,7 +293,7 @@ module.exports = [
         difficulty: 5,
         description: "Start in the position shown below - Extend your knees to move the weight upward - Push the weight until you fully extend your knees - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/leg-extension-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Machine Hack Squat",
@@ -301,7 +301,7 @@ module.exports = [
         difficulty: 8,
         description: "Start in the position shown below - Plant your feet and brace your core - Slowly lower into a squat and push through the ground to move the weight back up - Repeat ",
         image: "https://static.strengthlevel.com/images/illustrations/hack-squat-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Barbell Sissy Squat",
@@ -309,7 +309,7 @@ module.exports = [
         difficulty: 8,
         description: "Start in the position shown below - Plant your feet, brace your core get your balance - Keep your torso straight while slowly flexing your knees - Go as low as comfortably possible and push through the balls of your feet to bring yourself back up (Imagine extending your knee while pushing through the ground) - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/sissy-squat-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Lunge",
@@ -317,7 +317,7 @@ module.exports = [
         difficulty: 6,
         description: "Start in the position shown below - Brace your core and get your balance - Slowly lower into a lunge while staying upright and push through the ground to move the weight back up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/barbell-lunge-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Machine Leg Curl",
@@ -325,7 +325,7 @@ module.exports = [
         difficulty: 4,
         description: "Start in the position shown below - Flex your knees to move the weight downward - Push the weight until you fully flex your knees - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/seated-leg-curl-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Nordic Leg Curl",
@@ -333,7 +333,7 @@ module.exports = [
         difficulty: 9,
         description: "Start in the position shown below - Slowly lower yourself down by extending your knees and staying upright - Stop right before you touch the ground - Push up through your heels while staying upright to come back up - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/nordic-hamstring-curl-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Deadlift",
@@ -341,7 +341,7 @@ module.exports = [
         difficulty: 7,
         description: "Start in the position shown below - Brace your core, plant your feet and grip the bar tight - Push through the ground and extend your torso (Stand up straight) - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/romanian-deadlift-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Barbell Hip Thrust",
@@ -349,7 +349,7 @@ module.exports = [
         difficulty: 7,
         description: "Start in the position shown below - Brace your core and plant your feet - Thrust your hip straight up until you are in a bridge position - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/hip-thrust-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Dumbell Calf Raise",
@@ -357,7 +357,7 @@ module.exports = [
         difficulty: 6,
         description: "Start in the position shown below - Position your feet to allow flexion and extension of your ankles - Push through the balls of your feet to fully extend your ankles - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/dumbbell-calf-raise-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Machine Calf Raise",
@@ -365,7 +365,7 @@ module.exports = [
         difficulty: 5,
         description: "Start in the position shown below - Position your feet to allow flexion and extension of your ankles - Push through the balls of your feet to fully extend your ankles - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/machine-calf-raise-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
     {
         name: "Vertical Calf Raise",
@@ -373,6 +373,6 @@ module.exports = [
         difficulty: 4,
         description: "Start in the position shown below - Position your feet to allow flexion and extension of your ankles - Push through the balls of your feet to fully extend your ankles - Repeat",
         image: "https://static.strengthlevel.com/images/illustrations/sled-press-calf-raise-1000x1000.jpg",
-        saved: 0
+        saved: 0,
     },
 ]

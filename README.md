@@ -29,7 +29,7 @@ Fit2Go is a fitness application that gives users access to information about tra
 
 
 ## <a name="features"></a>Features
-* User can creaate data
+* User can create data
 * User can edit data
 * User can delete data
 * User can search data

@@ -3,7 +3,7 @@
 
 <head>
     <%- include("../partials/head.ejs") %>
-    <title>Exercises</title>
+        <title>Exercises</title>
 </head>
 
 <body>
@@ -18,7 +18,9 @@
                 <div class="card width">
                     <li>
                         <a class="index-list" href="/exercises/<%=exercises[i]._id%>">
-                            <h2 class="index-heading"><%=exercises[i].name %></h2> <br>
+                            <h2 class="index-heading">
+                                <%=exercises[i].name %>
+                            </h2> <br>
                             <img class="training" src="<%=exercises[i].image%>">
                         </a>
                     </li>
@@ -26,9 +28,11 @@
                 <% } %>
         </ul>
         <nav>
-            <a class ="button create" href="/exercises/new">
-                CREATE
-            </a>
+            <% if (currentUser) { %>
+                <a class="button create" href="/exercises/new">
+                    CREATE
+                </a>
+                <% } %>
         </nav>
 
         <footer>

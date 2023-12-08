@@ -28,9 +28,11 @@
                 <% } %>
         </ul>
         <nav>
-            <a class="button create" href="/stretches/new">
-                CREATE
-            </a>
+            <% if (currentUser) { %>
+                <a class="button create" href="/stretches/new">
+                    CREATE
+                </a>
+                <% } %>
         </nav>
 
         <footer>
