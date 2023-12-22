@@ -10,20 +10,32 @@ function isAuthenticated(req, res, next) {
     }
 }
 
-// Exercise.create(seedExercise, function (error, data) {
-//     if (error) {
-//         console.log(error)
-//     } else {
-//         console.log(data)
-//     }
-// })
+exercise.get("/seed", function (req, res) {
+    const userID = req.session.currentUser._id
+    Exercise.create(seedExercise, function (err, exercises) {
+        if (err) {
+            console.log(err)
+        } else {
+            console.log(exercises)
+            for (let i = 0; i < exercises.length; i++) {
+                User.findByIdAndUpdate(userID, { $push: { exercises: exercises[i]._id } }, (err, user) => {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        console.log(`exercise Id was added to the users db: `, exercises[i]._id)
+                    }
+                })
+            }
+        }
+    })
+})
 
 exercise.get("/stretches", function (req, res) {
     res.render("index.ejs")
 })
 
 exercise.get("", function (req, res) {
-    Exercise.find({}, function (error, data) {
+    Exercise.find({}, function (err, data) {
         res.render("exercise/exerciseIndex.ejs", {
             exercises: data,
             currentUser: req.session.currentUser
@@ -38,39 +50,98 @@ exercise.get("/new", isAuthenticated, function (req, res) {
 })
 
 exercise.delete("/:id", isAuthenticated, function (req, res) {
-    Exercise.findByIdAndDelete(req.params.id, function () {
-        res.redirect("/exercises")
+    const userId = req.session.currentUser._id;
+
+    Exercise.findById(req.params.id, (err, exercise) => {
+        if(err) {
+            console.log(err);
+        } else {
+            if(exercise && exercise.author.toString() === userId.toString()) {
+                Exercise.findByIdAndRemove(req.params.id, (err, data) => {
+                    if(err) {
+                        console.log(err);
+                    } else {
+                        User.findByIdAndUpdate(userId, {$pull: {exercises: exercise._id}}, (err, user) => {
+                            if(err) {
+                                console.log(err);
+                            } else {
+                                res.redirect(`/exercises/`)
+                            }
+                        })
+                    }
+                })
+            } else {
+                res.redirect(`/exercises/${req.params.id}`)
+            }
+        }
     })
 })
 
 exercise.put("/:id", isAuthenticated, function (req, res) {
     Exercise.findByIdAndUpdate(req.params.id, req.body, { new: true }, function () {
+        if (req.body.saved === "on") {
+            req.body.saved = true
+        } else {
+            req.body.saved = false
+        }
         res.redirect("/exercises/" + req.params.id)
     })
 })
 
 exercise.post("", isAuthenticated, function (req, res) {
-    Exercise.create(req.body, function (error, data) {
-        console.log(data)
-        res.redirect("/exercises")
+    const userID = req.session.currentUser._id
+    const exerciseData = {
+        name: req.body.name,
+        muscle: req.body.muscle,
+        difficulty: req.body.difficulty,
+        description: req.body.description,
+        image: req.body.image,
+        saved: req.body.saved,
+        author: userID
+    }
+    Exercise.create(exerciseData, function (err, exercise) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(`Exercise was added to the db: `, exercise);
+
+            User.findByIdAndUpdate(userID, { $push: { exercises: exercise._id } }, (err, user) => {
+                if (err) {
+                    console.log(err);
+                } else {
+                    console.log(`exercise Id was added to the users db: `, exercise._id)
+                }
+            })
+            res.redirect(`/exercises/`);
+        }
     })
+
 })
 
 exercise.get("/:id/edit", isAuthenticated, function (req, res) {
-    Exercise.findById(req.params.id, function (error, data) {
-        res.render("exercise/exerciseEdit.ejs", {
-            exercise: data,
-            i: req.params.id,
-            currentUser: req.session.currentUser
-        })
+    const userId = req.session.currentUser._id;
+
+    Exercise.findById(req.params.id, (err, exercise) => {
+        if (err) {
+            console.log(err);
+        } else {
+            if (exercise.author.toString() === userId.toString()) {
+                res.render("exercise/exerciseEdit.ejs", {
+                    exercise: exercise,
+                    i: req.params.id,
+                    currentUser: req.session.currentUser
+                });
+            } else {
+                res.redirect(`/exercises/${req.params.id}`)
+            }
+        }
     })
 })
 
 exercise.get("/:id", function (req, res) {
-    Exercise.findById(req.params.id, function (error, data) {
+    Exercise.findById(req.params.id, function (err, data) {
         res.render("exercise/exerciseShow.ejs", {
             exercise: data,
-            tabTitle: "Exercises",
             currentUser: req.session.currentUser
         })
     })

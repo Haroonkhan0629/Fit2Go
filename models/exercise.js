@@ -7,7 +7,7 @@ const exerciseSchema = new mongoose.Schema({
     description: {type: String, required: true},
     image: {type: String, required: true},
     saved: {type: Number, max: 1, min: 0},
-    // author: {type: mongoose.Schema.Types.ObjectId, ref: "User"}
+    author: {type: mongoose.Schema.Types.ObjectId, ref: "User"}
 })
 
 exerciseSchema.index({name: "text", muscle: "text"})
