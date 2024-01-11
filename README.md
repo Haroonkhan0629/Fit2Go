@@ -49,7 +49,6 @@ Fit2Go is a fitness application that gives users access to information about tra
 
 ## <a name="nextsteps"></a>Project Next Steps
 * New Collection: Nutrition Data
-* Media Queries: Allow users to access application on smaller devices
 
 ## <a name="deployment"></a>Project Links
 * [Application/Website](https://fit2go-gtmn.onrender.com)
