@@ -8,22 +8,25 @@
 
 <body>
     <div class="container">
-        <header>Fit2Go</header>
         <ul class="navigation">
             <%- include("../partials/listExercise.ejs") %>
         </ul>
-        <h1>Edit Exercise</h1>
-        <div class="card">
+        <h1 class="heading">Change Exercise</h1>
+        <div>
             <form action="/exercises/<%=i%>?_method=PUT" method="POST">
-                Name: <input type="text" name="name" value="<%=exercise.name%>"> <br>
-                Muscle: <input type="text" name="muscle" value="<%=exercise.muscle%>"> <br>
-                Difficulty: <br> <input type="number" name="difficulty" value="<%=exercise.difficulty%>"> <br>
-                Description: <input type="text" name="description" value="<%=exercise.description%>"> <br>
-                Image: <input type="text" name="image" value="<%=exercise.image%>"> <br>
-                Save?: <br> <input type="number" name="saved" value="<%=exercise.saved%>" placeholder="1 for Yes"> <br>
-                <input class="form" type="submit" value="EDIT">
+                <input type="text" name="name" value="<%=exercise.name%>" placeholder="Exercise Name"> <br>
+                <input type="text" name="muscle" value="<%=exercise.muscle%>" placeholder="Muscle Targeted"> <br>
+                <input type="number" name="difficulty" value="<%=exercise.difficulty%>" placeholder="Difficulty (1-10)"> <br>
+                <input type="text" name="description" value="<%=exercise.description%>" placeholder="Movement Description"> <br>
+                <input type="text" name="image" value="<%=exercise.image%>" placeholder="Image Address"> <br>
+                <input type="number" name="saved" value="<%=exercise.saved%>" placeholder="1=Save:0=Unsave"> <br>
+                <input class="form" type="submit" value="UPDATE">
             </form>
-            <a class="button back" href="/exercises/<%=i%>">BACK</a>
+            <form action="/exercises/<%=exercise._id%>?_method=DELETE" method="POST"
+                style="display:inline; margin-left: 16px">
+                <input class="button delete" type="submit" value="DELETE">
+            </form> <br />
+            <a class="button back margin" href="/exercises/<%=i%>">BACK</a>
         </div>
         <footer>
             <%- include("../partials/footer.ejs") %>

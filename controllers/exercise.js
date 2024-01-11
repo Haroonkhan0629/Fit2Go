@@ -56,7 +56,7 @@ exercise.delete("/:id", isAuthenticated, function (req, res) {
         if(err) {
             console.log(err);
         } else {
-            if(exercise && exercise.author.toString() === userId.toString()) {
+            if (exercise && exercise.author.toString() === userId.toString()) {
                 Exercise.findByIdAndRemove(req.params.id, (err, data) => {
                     if(err) {
                         console.log(err);

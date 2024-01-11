@@ -7,14 +7,14 @@
     <body>
         <div class="container">
             <% if (currentUser) { %>
-                <h1>Welcome <%= currentUser.username %>
+                <h1 class="heading">Welcome <%= currentUser.username %>
                 </h1>
-                <div class="card">
+                <div>
                     <p>
                         You are currently logged in to your account, click the button below to log out.
                     </p>
                     <form action="/sessions?_method=DELETE" method="POST">
-                        <input type="submit" class="form" value="LOG-OUT" class="btn-small red" />
+                        <input type="submit" class="user" value="LOG-OUT" class="btn-small red" />
                     </form>
                 </div>
                 <footer>
@@ -23,18 +23,16 @@
         </div>
         <% } else { %>
             <div class="container">
-                <h1>User Log In</h1>
-                <div class="card">
+                <h1 class="heading">User Log In</h1>
+                <div>
                     <form action="/sessions" method="POST">
                         <fieldset>
-                            <label for="username">Username:</label>
-                            <input type="text" name="username" placeholder="Username...">
+                            <input type="text" name="username" placeholder="Username">
                         </fieldset>
                         <fieldset>
-                            <label for="password">Password:</label> <br>
-                            <input type="password" name="password" placeholder="Password...">
+                            <input type="password" name="password" placeholder="Password">
                         </fieldset>
-                        <input type="submit" class="form" value="LOG-IN">
+                        <input type="submit" class="user" value="LOG-IN">
                     </form>
                 </div>
                 <footer>

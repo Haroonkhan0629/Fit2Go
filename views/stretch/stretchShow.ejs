@@ -8,14 +8,13 @@
 
 <body>
     <div class="container">
-        <header>Fit2Go</header>
         <ul class="navigation">
             <%- include("../partials/listStretch.ejs") %>
         </ul>
-        <h1>
+        <h1 class="heading">
             <%=stretch.name%>
         </h1>
-        <div class="card width">
+        <div>
             <div>
                 <h3>
                     Muscle Targeted: <%=stretch.muscle%>
@@ -26,21 +25,17 @@
                 <p>
                     <%=stretch.description%>
                 </p><br>
-                <img class="training" src="<%=stretch.image%>">
+                <img class="img" src="<%=stretch.image%>">
             </div>
             <% if (currentUser) { %>
                 <% if (stretch.saved < 1) { %>
-                    <a class="button saved" href="/saved/stretch/<%=stretch._id%>">SAVE</a>
+                    <a class="button saved" href="/saved/stretch/<%=stretch._id%>">SAVE</a> <br />
                     <%} else if (stretch.saved> 0) {%>
-                        <a class="button saved" href="/saved/unsave/stretch/<%=stretch._id%>">UNSAVE</a>
+                        <a class="button unsaved" href="/saved/unsave/stretch/<%=stretch._id%>">UNSAVE</a> <br />
                         <% } %>
-                            <form action="/stretches/<%=stretch._id%>?_method=DELETE" method="POST"
-                                style="display:inline; margin-left: 16px">
-                                <input class=" button delete" type="submit" value="DELETE">
-                            </form>
                             <a class="button edit" href="/stretches/<%=stretch._id%>/edit">EDIT</a> <br>
                             <% } %>
-                                <a class="button back" href="/stretches">BACK</a>
+                                <a class="button back margin" href="/stretches">BACK</a>
         </div>
         <footer>
             <%- include("../partials/footer.ejs") %>

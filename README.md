@@ -3,7 +3,7 @@
 #### My First Full Stack Web Application
 
 ## Description
-Fit2Go is a fitness application that gives users access to information about training and recovery. It includes various exercises and stretches along with helpful descriptions and images associated with them. There is a registration/log-in feature which allows returning members to pick up where they left off. The user can search for and save specific exercises/stretches, along with the ability to create, edit and delete them as well.
+Fit2Go is a fitness application that gives users access to information about training and recovery. It includes various exercises and stretches along with helpful descriptions and images associated with them. There is a registration/log-in feature which allows returning members to pick up where they left off. The user can search for specific exercises/stretches if they cannot find what they are looking for. Once registered and logged in, the user has the opportunity to create their own exercises/stretches. They will also have the ability to edit the data they create, while no one else can. The saved data is user specific as well, so users will only see exercises/stretches that they saved while they were logged in.
 
 ## Table of Contents
 * [Technologies Used](#technologiesused)
@@ -32,8 +32,9 @@ Fit2Go is a fitness application that gives users access to information about tra
 * Users can navigate through data
 * Users can search data
 * Members can create data
-* Members can edit data
-* Members can delete data
+* Members can edit their own created data
+* Members can delete their own created data
+* Members cannot edit or delete other members' data
 * Members can save data
 
 ## <a name="sketch"></a>Whiteboard Images

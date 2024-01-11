@@ -8,14 +8,13 @@
 
 <body>
     <div class="container">
-        <header>Fit2Go</header>
         <ul class="navigation">
             <%- include("../partials/listExercise.ejs") %>
         </ul>
-        <h1>
+        <h1 class="heading">
             <%=exercise.name%>
         </h1>
-        <div class="card width">
+        <div>
             <div>
                 <h3>
                     Muscle Worked: <%=exercise.muscle%>
@@ -26,21 +25,17 @@
                 <p>
                     <%=exercise.description%>
                 </p><br>
-                <img class="training" src="<%=exercise.image%>">
+                <img class="img" src="<%=exercise.image%>">
             </div>
             <% if (currentUser) { %>
                 <% if (exercise.saved < 1) { %>
-                    <a class="button saved" href="/saved/exercise/<%=exercise._id%>">SAVE</a>
+                    <a class="button saved" href="/saved/exercise/<%=exercise._id%>">SAVE</a> <br />
                     <%} else if (exercise.saved > 0) {%>
-                        <a class="button saved" href="/saved/unsave/exercise/<%=exercise._id%>">UNSAVE</a>
+                        <a class="button unsaved" href="/saved/unsave/exercise/<%=exercise._id%>">UNSAVE</a> <br />
                         <% } %>
-                            <form action="/exercises/<%=exercise._id%>?_method=DELETE" method="POST"
-                                style="display:inline; margin-left: 16px">
-                                <input class="button delete" type="submit" value="DELETE">
-                            </form>
                             <a class="button edit" href="/exercises/<%=exercise._id%>/edit">EDIT</a> <br>
                             <% } %>
-                                <a class="button back" href="/exercises">BACK</a>
+                                <a class="button back margin" href="/exercises">BACK</a>
         </div>
         <footer>
             <%- include("../partials/footer.ejs") %>

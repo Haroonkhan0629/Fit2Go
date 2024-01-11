@@ -3,43 +3,46 @@
 
 <head>
     <%- include("./partials/head.ejs") %>
-    <title>Results</title>
+        <title>Results</title>
 </head>
 
 <body>
     <div class="container">
-        <header>Fit2Go</header>
         <ul class="navigation">
             <%- include("./partials/searchIndex.ejs") %>
         </ul>
-        <h1>Search Results</h1>
-        <ul>
-            <% for(let i=0; i < exercises.length; i++){ %>
-                <div class="card width">
-                    <li>
-                        <a class="index-list" href="/exercises/<%=exercises[i]._id%>">
-                            <h2 class="index-heading"><%=exercises[i].name %></h2> <br>
-                            <img class="training" src="<%=exercises[i].image%>">
-                        </a>
-                    </li>
-                </div>
+        <% if (exercises && stretches) { %>
+            <h1 class="heading">Search Results</h1>
+            <% } else { %>
+                <h1 class="heading">No Results Found</h1>
                 <% } %>
-        </ul>
-        <ul>
-            <% for(let i=0; i < stretches.length; i++){ %>
-                <div class="card width">
-                    <li>
-                        <a class="index-list" href="/stretches/<%=stretches[i]._id%>">
-                            <h2 class="index-heading"><%=stretches[i].name %></h2> <br>
-                            <img class="training" src="<%=stretches[i].image%>">
-                        </a>
-                    </li>
-                </div>
-                <% } %>
-        </ul>
-        <footer>
-            <%- include("./partials/footer.ejs") %>
-        </footer>
+                    <ul class="cards">
+                        <% for (let i=0; i < exercises.length; i++){ %>
+                            <div class="card">
+                                <li>
+                                    <a class="index-list" href="/exercises/<%=exercises[i]._id%>"> 
+                                            <%=exercises[i].name %> <br>
+                                        <img class="image" src="<%=exercises[i].image%>">
+                                    </a>
+                                </li>
+                            </div>
+                            <% } %>
+                    </ul>
+                    <ul class="cards">
+                        <% for (let i=0; i < stretches.length; i++){ %>
+                            <div class="card">
+                                <li>
+                                    <a class="index-list" href="/stretches/<%=stretches[i]._id%>"> 
+                                            <%=stretches[i].name %> <br>
+                                        <img class="image" src="<%=stretches[i].image%>">
+                                    </a>
+                                </li>
+                            </div>
+                            <% } %>
+                    </ul>
+                    <footer>
+                        <%- include("./partials/footer.ejs") %>
+                    </footer>
     </div>
 </body>
 

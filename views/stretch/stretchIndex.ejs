@@ -8,20 +8,17 @@
 
 <body>
     <div class="container">
-        <header>Fit2Go</header>
         <ul class="navigation">
             <%- include("../partials/listStretch.ejs") %>
         </ul>
-        <h1>Stretches</h1>
-        <ul>
+        <h1 class="heading">Stretches</h1>
+        <ul class="cards">
             <% for(let i=0; i < stretches.length; i++){ %>
-                <div class="card width">
+                <div class="card">
                     <li>
                         <a class="index-list" href="/stretches/<%=stretches[i]._id%>">
-                            <h2 class="index-heading">
-                                <%=stretches[i].name %>
-                            </h2> <br>
-                            <img class="training" src="<%=stretches[i].image%>">
+                                <%=stretches[i].name %> <br>
+                            <img class="image" src="<%=stretches[i].image%>">
                         </a>
                     </li>
                 </div>

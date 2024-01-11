@@ -8,22 +8,25 @@
 
 <body>
     <div class="container">
-        <header>Fit2Go</header>
         <ul class="navigation">
             <%- include("../partials/listStretch.ejs") %>.
         </ul>
-        <h1>Edit Stretch</h1>
-        <div class="card">
+        <h1 class="heading">Change Stretch</h1>
+        <div>
             <form action="/stretches/<%=i%>?_method=PUT" method="POST">
-                Name: <input type="text" name="name" value="<%=stretch.name%>"> <br>
-                Muscle: <input type="text" name="muscle" value="<%=stretch.muscle%>"> <br>
-                Time: <br> <input type="number" name="time" value="<%=stretch.time%>"> <br>
-                Description: <input type="text" name="description" value="<%=stretch.description%>"> <br>
-                Image: <input type="text" name="image" value="<%=stretch.image%>"> <br>
-                Save?: <br> <input type="number" name="saved" value="<%=stretch.saved%>" placeholder="1 for Yes"> <br>
-                <input class="form" type="submit" value="EDIT">
+                <input type="text" name="name" value="<%=stretch.name%>" placeholder="Stretch Name"> <br>
+                <input type="text" name="muscle" value="<%=stretch.muscle%>" placeholder="Muscle Targeted"> <br>
+                <input type="number" name="time" value="<%=stretch.time%>" placeholder="Time (Seconds)"> <br>
+                <input type="text" name="description" value="<%=stretch.description%>" placeholder="Movement Description"> <br>
+                <input type="text" name="image" value="<%=stretch.image%>" placeholder="Image Address"> <br>
+                <input type="number" name="saved" value="<%=stretch.saved%>" placeholder="1=Save:0=Unsave"> <br>
+                <input class="form" type="submit" value="UPDATE">
             </form>
-            <a class="button back" href="/stretches/<%=i%>">BACK</a>
+            <form action="/stretches/<%=stretch._id%>?_method=DELETE" method="POST"
+                style="display:inline; margin-left: 16px">
+                <input class=" button delete" type="submit" value="DELETE">
+            </form> <br />
+            <a class="button back margin" href="/stretches/<%=i%>">BACK</a>
         </div>
         <footer>
             <%- include("../partials/footer.ejs") %>

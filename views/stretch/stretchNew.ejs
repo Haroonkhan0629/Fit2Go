@@ -3,27 +3,26 @@
 
 <head>
     <%- include("../partials/head.ejs") %>
-    <title>Create</title>
+        <title>Create</title>
 </head>
 
 <body>
     <div class="container">
-        <header>Fit2Go</header>
         <ul class="navigation">
             <%- include("../partials/listStretch.ejs") %>
         </ul>
-        <h1>Create Stretch</h1>
-        <div class="card">
+        <h1 class="heading">Add Stretch</h1>
+        <div>
             <form action="/stretches" method="POST">
-                Name: <input type="text" name="name" placeholder="Stretch Name..."> <br>
-                Muscle: <input type="text" name="muscle" placeholder="Muscle Targeted..."> <br>
-                Time: <br> <input type="number" name="time" placeholder="In Seconds..."> <br>
-                Description: <input type="text" name="description" placeholder="Movement Description..."> <br>
-                Image: <input type="text" name="image" placeholder="Image Address..."> <br>
-                Save?: <br> <input type="number" name="saved" placeholder="1 for Yes"> <br>
+                <input type="text" name="name" placeholder="Stretch Name"> <br>
+                <input type="text" name="muscle" placeholder="Muscle Targeted"> <br>
+                <input type="number" name="time" placeholder="Time (Seconds)"> <br>
+                <input type="text" name="description" placeholder="Movement Description"> <br>
+                <input type="text" name="image" placeholder="Image Address"> <br>
+                <input type="number" name="saved" placeholder="1=Save:0=Unsave"> <br>
                 <input class="form" type="submit" value="CREATE">
             </form>
-            <a class ="button back" href="/stretches">BACK</a>
+            <a class="button back" href="/stretches">BACK</a>
         </div>
         <footer>
             <%- include("../partials/footer.ejs") %>
