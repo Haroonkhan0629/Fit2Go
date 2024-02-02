@@ -78,7 +78,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 150px; 
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 .card {
